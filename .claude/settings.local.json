@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(cd /c/Users/jackr/source/repos/OffTheTee/src/GolfTournament.Api && dotnet ef migrations add InitialCreate --project ../GolfTournament.Infrastructure --output-dir Persistence/Migrations 2>&1)",
+      "Bash(tail:*)",
+      "Bash(cd /c/Users/jackr/source/repos/OffTheTee && dotnet build src/GolfTournament.Infrastructure/GolfTournament.Infrastructure.csproj --no-restore -q 2>&1)",
+      "Bash(git:*)",
+      "Bash(cd /c/Users/jackr/source/repos/OffTheTee/src/GolfTournament.Api && dotnet user-secrets init 2>&1)",
+      "Bash(cd /c/Users/jackr/source/repos/OffTheTee/src/GolfTournament.Api && dotnet user-secrets set \"ConnectionStrings:DefaultConnection\" \"Host=localhost;Port=5432;Database=offthetee;Username=offthetee;Password=offthetee_dev\" && dotnet user-secrets set \"Jwt:Secret\" \"dev-secret-key-at-least-32-characters-long!\" 2>&1)"
+    ]
+  }
+}

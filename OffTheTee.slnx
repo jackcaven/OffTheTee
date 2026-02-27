@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GolfTournament.Api/GolfTournament.Api.csproj" />
+    <Project Path="src/GolfTournament.Application/GolfTournament.Application.csproj" />
+    <Project Path="src/GolfTournament.Domain/GolfTournament.Domain.csproj" />
+    <Project Path="src/GolfTournament.Infrastructure/GolfTournament.Infrastructure.csproj" />
+    <Project Path="src/GolfTournament.Tests/GolfTournament.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,65 @@
+## .NET
+*.user
+*.csproj.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+bin/
+obj/
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+# EF Core migrations can be committed but tool output should not
+*.mdf
+*.ldf
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+## Node / Frontend
+client/node_modules/
+client/dist/
+client/.vite/
+client/.turbo/
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+*.tsbuildinfo
+
+## Environment / secrets
+.env
+.env.local
+.env.*.local
+appsettings.Local.json
+secrets.json
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Docker
+.docker/
+
+## Test output
+TestResults/
+coverage/
+*.coverage
+*.coveragexml

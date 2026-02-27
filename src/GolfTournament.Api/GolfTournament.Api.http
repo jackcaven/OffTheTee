@@ -1,0 +1,6 @@
+@GolfTournament.Api_HostAddress = http://localhost:5248
+
+GET {{GolfTournament.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
