@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GolfTournament.Domain\GolfTournament.Domain.csproj" />
+    <ProjectReference Include="..\GolfTournament.Application\GolfTournament.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

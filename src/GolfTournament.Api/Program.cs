@@ -98,6 +98,7 @@ try
 
     // Endpoints
     app.MapAuthEndpoints();
+    app.MapCourseEndpoints();
 
     // SignalR Hub
     app.MapHub<LeaderboardHub>("/hubs/leaderboard");

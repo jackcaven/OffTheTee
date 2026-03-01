@@ -1,3 +1,4 @@
+using GolfTournament.Application.Common;
 using GolfTournament.Domain.Entities;
 using GolfTournament.Domain.Interfaces;
 using GolfTournament.Infrastructure.ExternalServices;
@@ -42,6 +43,9 @@ public static class DependencyInjection
             services.AddSingleton<IConnectionMultiplexer>(
                 ConnectionMultiplexer.Connect(redisOptions));
         }
+
+        // IApplicationDbContext — resolved from the registered ApplicationDbContext
+        services.AddScoped<IApplicationDbContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
 
         // External service stubs (replace with real implementations when API credentials are available)
         services.AddScoped<IHandicapProvider, ManualHandicapProvider>();
